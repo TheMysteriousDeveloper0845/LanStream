@@ -69,6 +69,12 @@
         }
       }
     </style>
+    <script>
+      window.onload = () => {
+        const isMobile = window.matchMedia('(pointer: coarse) and (hover: none)').matches;
+        if (isMobile) alert("Are you on mobile?\nPlease note that this app is made for desktop only!");
+      }
+    </script>
   </head>
   <body style="background-color:#444;font-family:'Tilt Neon'; color: white; margin: 0">
     <h1 style="font-size:40px; border-bottom:solid 2px #ddd; text-align: center; margin: 0; padding: 30px 0px;background-image: linear-gradient(to bottom right, #666, #222);">LAN Stream</h1>
@@ -89,6 +95,7 @@
         </a>
       </h2>
       <ul>
+        <li>Download and extract the zip file.</li>
         <li>Double-click "Lan Stream", a window and a browser tab should open.</li>
         <li>When you are done using the app, close that window.</li>
         <li>In the browser tab, it says "Connection is not private", click on "Show details", and then "visit this website".</li>
