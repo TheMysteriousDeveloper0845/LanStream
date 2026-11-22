@@ -6,6 +6,9 @@ Visit the webpage for more info: https://themysteriousdeveloper0845.github.io/La
 
 ## Updates
 
+update 0.1.1:
+- Added "Doesn't work yet" for Mac download.
+
 update 0.1.0:
 - Added `LanStream.exe`.
 - Added info about installing on Windows.
