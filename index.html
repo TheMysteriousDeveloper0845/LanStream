@@ -5,11 +5,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_apple.png"/>
+    <link rel="icon" type="image/png" sizes="180x180" href="./favicon_apple.png">
+    <style>
+      main {
+        min-height: 100vh;
+
+        &>p {
+          text-align: center;
+          padding: 60px 0px;
+          width: 100%; 
+          font-size: 24px;
+          margin: 0px;
+        }
+
+        hr {
+          border-width: 1px;
+          border-style: solid;
+          border-color: #ddd;
+          margin: 0;
+        }
+
+        h2 {
+          margin: 0px;
+          padding-left: 20px;
+          padding-top: 20px;
+          font-size: 30px;
+
+          a img {
+            vertical-align: text-bottom;
+          }
+        }
+
+        ul li {
+          font-size: 18px;
+
+          ul {
+            list-style: "-  ";
+            padding-left: 16px;
+          }
+        }
+      }
+
+      footer{
+        background-color: #222;
+        border-top: solid #ddd 2px;
+        display: flex;
+        width: 100%;
+        padding: 15px 0px;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      a img{
+        border: solid #ddd 2px;
+        border-radius: 10px;
+        padding: 4px;
+        height: 24px;
+        transition: all 0.2s linear;
+
+        &:hover{
+          background-color: #555;
+        }
+      }
+    </style>
   </head>
-  <body style="background-color:#444;font-family:'Tilt Neon'; color: white">
-    <h1 style="font-size:40px; border-bottom:'solid 2px #ddd'">LAN Stream</h1>
-    <p>Stream across device locally</p>
-  
+  <body style="background-color:#444;font-family:'Tilt Neon'; color: white; margin: 0">
+    <h1 style="font-size:40px; border-bottom:solid 2px #ddd; text-align: center; margin: 0; padding: 30px 0px;background-image: linear-gradient(to bottom right, #666, #222);">LAN Stream</h1>
+    <main>
+      <p>Stream across devices locally!</p>
+      <div style="width: 100%; display: grid; grid-template-columns: 35% 10% 55%; grid-template-rows: auto 300px; position: relative; place-items: center; background-color: #3a3a3a; padding: 20px 0px; margin-bottom: 50px;">
+        <p>Streaming from an iphone</p>
+        <p>-></p>
+        <p>Watching on a Mac</p>
+        <img src="./mobile.gif" style="max-height: 100%; max-width: 100%;"/>
+        <p>-></p>
+        <img src="./desktop.gif" style="max-height: 100%; max-width: 100%;"/>
+      </div>
+      <hr/>
+      <h2>Install on MacOS
+        <a href="" title="Download">
+          <img src="./download_logo.png" alt="github"/>
+        </a>
+      </h2>
+      <ul>
+        <li>Double-click "Lan Stream", a window and a browser tab should open.</li>
+        <li>When you are done using the app, close that window.</li>
+        <li>In the browser tab, it says "Connection is not private", click on "Show details", and then "visit this website".</li>
+        <li>Now you would see you id and server LAN IP on the top.</li>
+        <li>If you want to stream just click "Start Stream".</li>
+        <li>If you want to watch on another device, then on the other device:<ul>
+          <li>Open the url "https://[Server LAN IP]:8181". For example, if your server LAN IP is 192.168.1.119, then open the url "https://192.168.1.119:8181". The "s" in "https" is important.</li>
+          <li>On the other device, click on "Watch Stream".</li>
+          <li>Enter the streamer id, which is the id in the streamer's tab.</li>
+          <li>Wait a few seconds.</li>
+        </ul></li>
+      </ul>
+      <p>Just make sure your devices are on the same network!</p>
+    </main>
+    <footer>
+      <a target="_blank" href="https://github.com/TheMysteriousDeveloper0845/LanStream" title="Github">
+        <img src="./github_logo.png" alt="github"/>
+      </a>
+      <a target="_blank" href="https://ko-fi.com/TheMysteriousDeveloper" title="Donate">
+        <img src="./donate_logo.png" alt="donate"/>
+      </a>
+    </footer>
   </body>
 </html>
-
