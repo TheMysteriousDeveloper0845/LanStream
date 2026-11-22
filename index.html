@@ -80,7 +80,7 @@
     <h1 style="font-size:40px; border-bottom:solid 2px #ddd; text-align: center; margin: 0; padding: 30px 0px;background-image: linear-gradient(to bottom right, #666, #222);">LAN Stream</h1>
     <main>
       <p>Stream across devices locally!</p>
-      <div style="width: 100%; display: grid; grid-template-columns: 35% 10% 55%; grid-template-rows: auto 300px; position: relative; place-items: center; background-color: #3a3a3a; padding: 20px 0px; margin-bottom: 50px;">
+      <div style="width: 100%; display: grid; grid-template-columns: 35% 10% 55%; grid-template-rows: auto 300px; position: relative; place-items: center; background-color: #3a3a3a; padding: 20px 0px;">
         <p>Streaming from an iphone</p>
         <p>-></p>
         <p>Watching on a Mac</p>
@@ -88,18 +88,36 @@
         <p>-></p>
         <img src="./desktop.gif" style="max-height: 100%; max-width: 100%;"/>
       </div>
-      <hr/>
-      <h2>Install on MacOS
-        <a href="./LanStream.zip" title="Download" download="LanStream.zip">
-          <img src="./download_logo.png" alt="github"/>
-        </a>
-      </h2>
-      <ul>
-        <li>Download and extract the zip file.</li>
-        <li>Double-click "Lan Stream", a window and a browser tab should open.</li>
-        <li>When you are done using the app, close that window.</li>
-        <li>In the browser tab, it says "Connection is not private", click on "Show details", and then "visit this website".</li>
-        <li>Now you would see you id and server LAN IP on the top.</li>
+      <div style="display: grid; grid-template-columns: 50% 50%; margin: 50px 0px;">
+        <section style="border-right: solid #ddd 1px;">
+          <h2>Install on Windows
+            <a href="./LanStream.exe" title="Download" download="LanStream.exe">
+              <img src="./download_logo.png" alt="github"/>
+            </a>
+          </h2>
+          <ul>
+            <li>Download the .exe and run it.</li>
+            <li>A window and a browser tab will open.</li>
+            <li>When you are done using the app, close that window.</li>
+            <li>In your browser, it will say "Your connection isn't private". Click on "Advanced" and "continue to localhost".</li>
+          </ul>
+        </section>
+        <section style="border-left: solid #ddd 1px;">
+        <h2>Install on MacOS
+          <a href="./LanStream.zip" title="Download" download="LanStream.zip">
+            <img src="./download_logo.png" alt="github"/>
+          </a>
+        </h2>          
+          <ul>
+            <li>Download and extract the zip file.</li>
+            <li>Double-click "Lan Stream", a window and a browser tab should open.</li>
+            <li>When you are done using the app, close that window.</li>
+            <li>In the browser tab, it says "Connection is not private", click on "Show details", and then "visit this website".</li>
+          </ul>
+        </section>
+      </div>
+      <ul style="margin: 0px;">
+        <li>In your browser tab, you would see your id and server LAN IP on the top.</li>
         <li>If you want to stream just click "Start Stream".</li>
         <li>If you want to watch on another device, then on the other device:<ul>
           <li>Open the url "https://[Server LAN IP]:8181". For example, if your server LAN IP is 192.168.1.119, then open the url "https://192.168.1.119:8181". The "s" in "https" is important.</li>
